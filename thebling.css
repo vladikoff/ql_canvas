@@ -21,3 +21,4 @@ ul#stats li #interval_go {float:left;cursor:pointer;}
 ul#stats li#time {float:right;padding:0;}
 .flash_message {cursor:pointer;}
 .right {float:right;}
+.red {color:#ff0000;}
