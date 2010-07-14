@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quickleft | QL Canvas</title>
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="thebling.css" type="text/css" media="screen" />
+<script type='text/javascript' src='jquery.js'></script>
+<script type='text/javascript' src='thepower.js'></script>
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<h1>QL Canvas</h1>
+		<ul id="nav">
+			<li><a class="action flash_message" href="#" data-action="circle" data-message="Random X Coordinate.<br />Random Y Coordinate.<br />Random Radius.<br />Draw.">//Circles</a></li>
+			<li><a class="action flash_message" href="#" data-action="calculusTween" data-message="Clear Canvas.<br />Sine Based Y Coordinate.<br />Draw.">//Calculus Tween</a></li>
+			<li><a class="action flash_message" href="#" data-action="gradient" data-message="6 Math.random() Calls.<br />Draw.">//Gradient</a></li>
+			<li id="clear" class="right flash_message" data-message="Clear the canvas."><a href="#">Clear</a></li>
+			<li class="right">|</li>
+			<li id="stop" class="right flash_message" data-message="Stop interval (animation)."><a href="#">Stop</a></li>
+		</ul>
+	</header>
+	<section>
+		<div id="view">
+			<canvas id="ql_canvas" width="800" height="400">
+				<p style="display:block !important;">Your browser does not support HTML5 Canvas.</p>
+			</canvas>
+			<p id="msg"></p>
+		</div>
+	</section>
+	<aside>
+		<ul id="stats">
+			<li id="draw_count" class="flash_message" data-message="This is the number of times the Canvas has been re-written.">Draws: <span>0</span></li>
+			<li id="fps" class="flash_message" data-message="This number represents the cycles of Javascript redraw calculations per second.<br />This is NOT the actual displayed Frames Per Second.">JSFPS: <span>0</span></li>
+			<li class="flash_message" data-message="Enter a number (in milliseconds) for JS setInterval().<br />">Timer Interval: </li>
+			<li id="interval_field"><input id="interval" /><div id="interval_go">SET</div></li>
+			<li id="time">00:00:00</li>
+		</ul>
+	</aside>
+</div>
+</body>
+</html>
